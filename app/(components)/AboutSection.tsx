@@ -41,8 +41,8 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
-  const [_, startTransition] = useTransition();
+  const [tab, setTab] = useState<string>("skills");
+  const [, startTransition] = useTransition();
 
   const handleTabChange = (id: string) => {
     startTransition(() => {
@@ -69,29 +69,23 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certifications{" "}
+              Certifications
             </TabButton> */}
           </div>
           <div className="mt-8">
-            {
-              //@ts-ignore
-              TAB_DATA.find((t) => t.id === tab).content
-            }
+            {TAB_DATA.find((t) => t.id === tab)?.content ?? null}
           </div>
         </div>
       </div>

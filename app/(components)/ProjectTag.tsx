@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectTag = ({ name, onClick, isSelected }:{
     name: string;
-    onClick: any;
+    onClick: (name: string) => void;
     isSelected: boolean;
 }) => {
   const buttonStyles = isSelected

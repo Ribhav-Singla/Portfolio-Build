@@ -49,7 +49,7 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (newTag:any) => {
+  const handleTagChange = (newTag:string) => {
     setTag(newTag);
   };
 

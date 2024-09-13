@@ -8,12 +8,13 @@ import Image from "next/image";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const target = e.currentTarget;
     const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
+      email: (target.email as HTMLInputElement).value,
+      subject: (target.subject as HTMLInputElement).value,
+      message: (target.message as HTMLTextAreaElement).value,
     };
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
@@ -27,7 +28,7 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    // const resData = await response.json(); 
+    // const resData = await response.json(); // Remove or use this if needed
 
     if (response.status === 200) {
       console.log("Message sent.");
