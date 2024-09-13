@@ -25,3 +25,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.about_us_image{
+  box-shadow: 0 0 2px green,
+  0 0 4px green;
+}

@@ -12,10 +12,10 @@ export default function Home() {
       <Navbar/>
       <div className="container mx-auto px-12 py-4 mt-32">
         <HeroSection />
-        <AchievementsSection/>
+        {/* <AchievementsSection/> */}
         <AboutSection/>
         <ProjectsSection/>
-        <EmailSection/>
+        {/* <EmailSection/> */}
         <Footer/>
       </div>
     </main>

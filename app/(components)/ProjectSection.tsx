@@ -7,58 +7,41 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/profile.webp",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "CPU Scheduling Visualizer",
+    description: "Interactive CPU Scheduling Visualizer for Algorithms",
+    image: "/cpu_scheduling.png",
+    tag: ["All", "DSA"],
+    gitUrl: "https://github.com/Ribhav-Singla/CPU-Scheduling-Visualizer",
+    previewUrl: "https://cpu-scheduling-visualizer-ribhav.vercel.app/",
   },
   {
     id: 2,
-    title: "Photography Portfolio Website",
-    description: "Project 2 description",
-    image: "/profile.webp",
+    title: "TicketFusion",
+    description: "Event Management Platform",
+    image: "/ticket.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Ribhav-Singla/Ticket_Fusion",
+    previewUrl: "https://ticket-fusion-djif.onrender.com/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/profile.webp",
+    title: "Trivia Quiz App",
+    description: "Dynamic Quiz App",
+    image: "/quiz.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Ribhav-Singla/trivia-Quiz-App",
+    previewUrl: "https://trivia-quiz-app-eight.vercel.app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/profile.webp",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/profile.webp",
+    title: "Demo Shopping Cart",
+    description: "UI/UX Shopping Cart",
+    image: "/cart.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Ribhav-Singla/Shopping-Cart",
+    previewUrl: "https://shopping-cart-two-topaz.vercel.app/",
   },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/profile.webp",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  
 ];
 
 const ProjectsSection = () => {
@@ -92,13 +75,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="DSA"
+          isSelected={tag === "DSA"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
