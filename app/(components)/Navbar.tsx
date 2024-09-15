@@ -32,6 +32,14 @@ const Navbar = () => {
         >
           {'</>'}
         </Link>
+        <div className="flex justify-center items-center gap-8">
+          <Link href={'https://www.linkedin.com/in/ribhav-singla/'}>
+            <img src="/linkedin.png" alt="Linkedin" width={40}  className=""/>
+          </Link>
+          <Link href={'https://github.com/Ribhav-Singla'}>
+            <img src="/github.png" alt="Linkedin" width={40}  className="bg-gray-200 rounded-md"/>
+          </Link>
+        </div>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
