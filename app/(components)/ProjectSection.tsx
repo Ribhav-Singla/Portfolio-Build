@@ -16,6 +16,15 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "GraphRoute Decoder",
+    description: "Shortest Path Decoder",
+    image: "/graph.png",
+    tag: ["All", "DSA"],
+    gitUrl: "https://github.com/Ribhav-Singla/GraphRouteDecoder",
+    previewUrl: "https://graph-route-decoder.vercel.app/",
+  },
+  {
+    id: 3,
     title: "TicketFusion",
     description: "Event Management Platform",
     image: "/ticket.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "https://ticket-fusion-djif.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Trivia Quiz App",
     description: "Dynamic Quiz App",
     image: "/quiz.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://trivia-quiz-app-eight.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Demo Shopping Cart",
     description: "UI/UX Shopping Cart",
     image: "/cart.png",
