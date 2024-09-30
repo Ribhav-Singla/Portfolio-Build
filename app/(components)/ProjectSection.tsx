@@ -25,6 +25,15 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "Real Time Device Management",
+    description: "Developed during first internship 2024",
+    image: "/rt-device.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Ribhav-Singla/Real-time-device-management-internship-2024",
+    previewUrl: "https://real-time-device-management.vercel.app/",
+  },
+  {
+    id: 4,
     title: "TicketFusion",
     description: "Event Management Platform",
     image: "/ticket.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://ticket-fusion-djif.onrender.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Trivia Quiz App",
     description: "Dynamic Quiz App",
     image: "/quiz.png",
@@ -42,7 +51,7 @@ const projectsData = [
     previewUrl: "https://trivia-quiz-app-eight.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Demo Shopping Cart",
     description: "UI/UX Shopping Cart",
     image: "/cart.png",
