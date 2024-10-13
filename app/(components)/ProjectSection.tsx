@@ -16,6 +16,15 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Syncscript",
+    description: "Real time text editor",
+    image: "/syncscript.png",
+    tag: ["All"],
+    gitUrl: "https://github.com/Ribhav-Singla/Syncscript",
+    previewUrl: "https://syncscript-alpha.vercel.app/",
+  },
+  {
+    id: 3,
     title: "GraphRoute Decoder",
     description: "Shortest Path Decoder",
     image: "/graph.png",
@@ -24,7 +33,7 @@ const projectsData = [
     previewUrl: "https://graph-route-decoder.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Real Time Device Management",
     description: "Developed during first internship 2024",
     image: "/rt-device.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://real-time-device-management.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "TicketFusion",
     description: "Event Management Platform",
     image: "/ticket.png",
@@ -42,24 +51,14 @@ const projectsData = [
     previewUrl: "https://ticket-fusion-djif.onrender.com/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Trivia Quiz App",
     description: "Dynamic Quiz App",
     image: "/quiz.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Ribhav-Singla/trivia-Quiz-App",
     previewUrl: "https://trivia-quiz-app-eight.vercel.app/",
-  },
-  {
-    id: 6,
-    title: "Demo Shopping Cart",
-    description: "UI/UX Shopping Cart",
-    image: "/cart.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Ribhav-Singla/Shopping-Cart",
-    previewUrl: "https://shopping-cart-two-topaz.vercel.app/",
-  },
-  
+  },  
 ];
 
 const ProjectsSection = () => {
